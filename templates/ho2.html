@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+<div class="b">
+<button class="btn btn-success">메모 생성</button>
+<span id="start"></span>
+</div>
+<script type="text/javascript">
+
+
+
+var append_text=function(){
+var text=prompt('글 내용을 수정하세요');
+
+$(this).append(text)
+}
+var append_ment=function(){
+
+div=$('<div>').addClass('a');
+$('button').after(div);
+$('div.a').drags();
+}
+	$(document).ready(function(){
+		$('button').on('click',append_ment)
+	})
+
+$('.b').on('dblclick', 'div', append_text);
+
+</script>
+
+
+{% endblock %}

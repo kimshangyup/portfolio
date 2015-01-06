@@ -1,0 +1,67 @@
+{% extends 'layout2.html' %}
+{% block body %}
+
+
+<div class="container">
+<h1>Media for START-UP</h1>
+<hr>
+<div class="col-md-4">
+<h2>besuccess</h2>
+<ul>
+{% for i in soup1.find_all('div','post-content')%}
+{% for a in i.find_all('a')%}
+<li><a href={{a['href']}}>{{a.text}}</a></li>
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+
+
+<div class="col-md-4">
+<h2>platum</h2>
+<ul>
+{% for i in soup2.find_all('h2','post-box-title')%}
+{% for a in i.find_all('a')%}
+<li><a href={{a['href']}}>{{a.text}}</a></li>
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+
+<div class="col-md-4">
+<h2>VENTURE SQUARE</h2>
+<ul>
+{% for i in soup3.find_all('h2') %}
+{% for x in i.find_all('a')%}
+<li><a href={{x['href']}}>{{x.text}}</a></li>
+{% endfor %}
+{% endfor %}
+</ul>
+</div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

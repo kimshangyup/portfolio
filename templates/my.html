@@ -1,0 +1,160 @@
+<html>
+<head>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700|Shadows+Into+Light|Indie+Flower' rel='stylesheet' type='text/css'>
+	<style>
+
+h1{
+	font-family: 'Shadows Into Light', cursive;
+	color:black;
+	padding:10px;
+	font-size:64px;
+	margin-top:20px;
+
+}
+span{
+font-family: 'Shadows Into Light', cursive;
+font-size:124px;
+}
+div{
+	text-align: center;
+}
+img{
+	margin-left:40px;
+	opacity:1;
+}
+.active{
+opacity:0.6;
+
+}
+
+#bg{
+background-image:url('/static/bg2.jpg');
+width:80%;
+height:400px;
+background-repeat:no-repeat;
+margin-left:-70px;
+}
+li{
+display: inline-block;
+font-family: 'Shadows Into Light', cursive;
+font-size:32px;
+margin-left:60px;
+margin-top:40px;
+}
+a{
+	color:black;
+
+}
+a:hover{
+text-decoration: none;
+}
+#a1:hover{
+color:red;
+}
+#a2:hover{
+color:orange;
+}
+#a3:hover{
+color:green;
+}
+#a4:hover{
+color:blue;
+}
+#a5:hover{
+color:purple;
+}
+</style>
+</head>
+<body>
+
+<div id="bg">
+</div>
+	<div class="container">
+<span>Shangyup's story</span>
+<ul>
+	<li><a href="#hs" id="a1">Highschool</a></li>
+	<li><a href="#fm" id="a2" >Freshman</a></li>
+	<li><a href="#sm" id="a3">Sophomore</a></li>
+	<li><a href="#in" id="a4">-ing</a></li>
+	<li><a href="#il" id="a5">I like</a></li>
+</ul>
+
+<h1 id="hs">Highschool</h1>
+<hr>
+	<a href="http://www.ny.gov/"><img src="/static/ny.jpg" alt=""></a>
+	<a href="http://kisb.net/"><img src="/static/ki.jpg" alt=""></a>
+	<a href="http://www.youtube.com/"><img src="/static/rb.jpg" alt=""></a>
+<h1 id="fm">Freshman</h1>
+<hr>
+	<a href="http://www.snu.ac.kr/index.html"><img src="/static/su.jpg" alt=""></a>
+	<a href="http://www.globalintelligence.co.kr/index.php"><img src="/static/gi.jpg" alt=""></a>
+	<a href="https://prezi.com/lwjsm5ral3fj/presentation/"><img src="/static/ss.jpg" alt=""></a>
+	<a href="http://www.youtube.com/"><img src="/static/mv.jpg" alt=""></a>
+
+<h1 id="sm">Sophomore</h1>
+<hr>
+	<a href="http://www.bcg.com/"><img src="/static/bc.jpg" alt=""></a>
+	<a href="http://cafe.naver.com/edu1eva"><img src="/static/ev.jpg" alt=""></a>
+	<a href="https://mirror.enha.kr/wiki/%ED%96%89%EC%A0%95%EB%B3%91"><img src="/static/kw.jpg" alt=""></a>
+<h1 id="in">-ing</h1>
+<hr>
+	<a href="https://www.facebook.com/groups/656043351145965/"><img src="/static/bk.jpg" alt=""></a>
+	<a href="http://entrepreneurship.snu.ac.kr/"><img src="/static/vb.jpg" alt=""></a>
+	<a href="https://www.facebook.com/p.rogramming3k"><img src="/static/pr.jpg" alt=""></a>
+<h1 id="il">I like</h1>
+<hr>
+	<a href="http://www.codecademy.com/learn"><img src="/static/cd.jpg" alt=""></a>
+	<a href="http://www.youtube.com/watch?v=7aA17H-3Vig"><img src="/static/sj.jpg" alt=""></a>
+	<a href="http://www.buskerbusker.co.kr/"><img src="/static/bu.jpg" alt=""></a>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$('h1').mouseenter(function() {
+       		$(this).animate({
+           		width: '+=120px'
+       		});
+       		//$(this).toggleClass('active')
+   		});
+   		$('h1').mouseleave(function() {
+       		$(this).animate({
+           		width: '-=120px'
+       		});
+       		//$(this).toggleClass('active')
+ 
+   		});
+
+   		$('#bg').hover(function(){
+   			$('span').fadeOut(4000);
+   		})
+
+   	    $('img').mouseenter(function(){
+   	    	$(this).addClass('active')
+   	    })
+   	    $('img').mouseleave(function(){
+   	    	$(this).removeClass('active')
+   	    })
+
+   	    
+	})
+
+</script>
+</body>
+</html>

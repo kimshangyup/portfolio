@@ -1,0 +1,68 @@
+
+body{
+font-family:'맑은 고딕';
+background-image:url('/static/apple.jpg');
+background-repeat:no-repeat;
+background-size:100%;
+color:white;
+background-color: black;
+text-align: center;
+}
+
+.con{
+background-image:url('/static/gx.jpg');
+background-size: 100%
+
+}
+li{
+   display:inline-block;
+   font-size:48px;
+   margin-left:180px;
+}
+   
+#li{
+   margin-left:0px;
+
+}
+a{
+   color:white;
+}
+a:hover{
+   text-decoration: none;
+   color:red;
+}
+h1{
+   font-size:120px;
+
+}
+h2{
+   font-size:48px;
+}
+   @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+   h1, h2, li{
+      font-family: 'Hanna', serif;
+      margin-top:120px;
+   }
+
+
+table{
+border: 1px solid gray;
+width:400px;
+}
+
+#carousel-example-generic{
+margin:auto;
+}
+
+#team>div{
+display:inline-block;
+width:100px;
+height:100px;
+margin-left:40px;
+margin-top:40px;
+background-size: 100%;
+}
+.ui-effects-wrapper{
+background-size: 100%;
+}
+

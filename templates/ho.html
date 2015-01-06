@@ -1,0 +1,48 @@
+
+
+{% extends 'layout.html' %}
+{% block body %}
+
+
+
+<button class="btn btn-success">success</button>
+<div id="bd">
+<div id="button">start! Catch JeongHyun!!</div>
+<div id="b1"></div>
+</div> 
+  <script type="text/javascript">
+alert("press the red box, and catch the white one!");
+alert("1 is the hardest, 10 is the easiest");
+var x=1;
+var y=1;
+var t=0;
+var re=document.getElementById("re");
+var div=document.createElement("div");
+var body=document.createElement("body");
+var b1=document.getElementById("b1");
+var button=document.getElementById("button");
+button.addEventListener("click",function(){
+setInterval(function(){
+x=Math.random()*456;
+y=Math.random()*256;
+b1.setAttribute("style","margin-left:"+x+"px; margin-top:"+y+"px;").css("width","60px").css("height","60px")
+
+},prompt("put the number between 1 to 10")*100);
+});
+setInterval(function(){
+t=t+0.1;
+},100);
+
+var div = '<div></div>';
+
+
+b1.addEventListener("click",function(){
+
+alert("Victory!"+t.toFixed(2)+" second!");
+});
+
+
+</script>
+<embed src="pocket.mp3" hidden="true" autostart="true">
+
+{% endblock %}

@@ -1,0 +1,10 @@
+<html>
+<head></head>
+<body>
+	
+{% for i in soup.find_all('img') %}
+    {{ i['src'] }}
+{% endfor %}
+
+</body>
+</html>

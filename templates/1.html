@@ -1,0 +1,21 @@
+{% extends 'layout3.html' %}
+{% block body %}
+
+
+
+
+<div class="container">
+<div class="col-md-6">
+	<img src="http://img.phinf.grafolio.net/20140921_258/14112822558045dSbb_JPEG/detail1.jpg?type=w896" alt="3D Illustrator / Digital artist 박태훈의 Dream Container">
+</div>
+<ul>
+	<li><a href="{{ url_for('my_page')}}">my page</a></li>
+	<li><a href="{{ url_for('p_rogramming')}}">p.rogramming</a></li>
+	<li><a href="http://goodgamezz.com">minigame</a></li>
+	<li><a href="{{ url_for('b_memo')}}">memo-storming</a></li>
+	<li><a href="{{ url_for('media')}}">start-up media</a></li>
+	<li><a href="{{ url_for('web_art')}}">web_art</a></li>
+</ul>
+</div>
+{% endblock %}
+

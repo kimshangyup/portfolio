@@ -1,0 +1,242 @@
+{% extends 'layout.html' %}
+{% block body %}
+  		
+
+<!--<img  src="/static/iu.jpg" width="250px" height="200px">-->
+
+<div class="con">
+<div class="container">
+
+<h1><a href="#">피로그래밍</a></h1>
+
+  <ul>
+    <li id="li"><a href="#about">소개</a></li>
+    <li><a href="#members">팀</a></li>
+    <li><a href="#photo">사진</a></li>
+    <li><a href="#footers">컨택</a></li>
+  </ul>
+     
+
+
+<form role="search" action="/login" method="POST">
+        <input type="text" name="user_id" class="form-control" placeholder="Username" style="width:160px; display:inline-block;">
+        <input type="password" name="user_pw" class="form-control" placeholder="Password" style="width:160px; display:inline-block; margin-left:1px;">
+      <button type="submit" class="btn btn-default">sign in</button>
+</form>
+
+
+<h2 id="about">소개</h2>
+비전공자를 위한 코딩 동아리
+
+<div id="team">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+<h2 id="members">팀</h2>
+
+아사서
+24/7
+3조
+거스코딩크
+
+
+<h2 id="photo">사진</h2>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:960px; height:540px;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="/static/11.jpg" class="showing_img">
+      
+    </div>
+  
+    <div class="item">
+      <img src="/static/14.jpg" class="showing_img">
+     
+  </div>
+
+    <div class="item">
+      <img src="/static/10.jpg" class="showing_img">
+     
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+</div>
+
+<div id="footer">
+  <h2 id="footers">컨택</h2><br>
+  <p><span></span>220, Research Park, Gwanak-gu,seoul</p>
+  <p><span>T</span> 010-4580-4121</p>
+  <p><span>F</span> 02-534-4027</p>
+  <p><span>E</span> kmn1120@naver.com</p>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fp.rogramming3k&amp;width=400&amp;layout=standard&amp;action=recommend&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:80px;" allowTransparency="true"></iframe>
+
+<div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-post" data-href="https://www.facebook.com/beecanvas/posts/313810975476109" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/beecanvas">비캔버스 - BeeCanvas</a>님의 <a href="https://www.facebook.com/beecanvas/posts/313810975476109">글</a></div></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="fb-comments" data-href="https://www.facebook.com/p.rogramming3k/timeline" data-numposts="5" data-colorscheme="dark"></div>
+
+<br>
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fp.rogramming3k%3Ffref%3Dts&amp;width&amp;height=258&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true"></iframe>
+
+
+<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3166.783854059152!2d126.95944600000001!3d37.46582500000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca01c0aadd7f5%3A0x24dd875216051998!2z7ISc7Jq464yA7Jew6rWs6rO17JuQ7Juo65Sp7ZmA!5e0!3m2!1sko!2s!4v1420559916253" width="400" height="300" frameborder="0"></iframe></div>
+
+</div>
+
+
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  
+
+$('#team > div').hover(function(){
+    $(this).effect('bounce',{times:3},500);
+  });
+
+  $('.carousel').carousel({
+  interval: 4000
+})
+
+for(i=1;i<19;i++){
+$("#team div:nth-child("+i+")").css('background-image', 'url("/static/'+i+'.jpg")');
+}
+
+
+
+  })
+  
+
+</script>
+
+
+
+
+<!--
+ <div class="row">
+  
+  <h1> GAMES </h1>  <br>
+
+      <div class="col-md-4"><div class="thumbnail"><a href="#">
+      <img src="" class="img-rounded"></a>
+        <div class="caption"><h5>Spaceship</h5><h6>설명</h6></div></div></div>
+  
+      <div class="col-md-4"><div class="thumbnail"><a href="#">
+      <img src="" class="img-rounded"></a>
+        <div class="caption"><h5>Catch JeongHyun</h5><h6>설명</h6></div></div></div>
+  
+      <div class="col-md-4"><div class="thumbnail"><a href="#">
+      <img src="" class="img-rounded"></a>
+        <div class="caption"><h5>Mario jump</h5><h6>설명</h6></div></div></div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	$('#b1').on('hover',function(){
+
+		$(this).toggleClass="active";
+	})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+ <table>
+<th colspan="2">회원가입 페이지</th>
+<tr>
+<td>아이디:</td>
+<td><input type="text">
+<input type="button" value="중복확인"></td>
+</tr>
+<tr>
+<td>비밀번호:</td>
+<td><input type="password"></td>
+</tr>
+<tr>
+<td>이름:</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>학년:</td>
+<td><select>
+<option>1학년</option>
+<option>2학년</option>
+<option>3학년</option>
+<option>4학년</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2"><input type="button" value="가입하기" id="re"></td>
+</tr>
+</table>
+<div></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+-->
+{% endblock %}
