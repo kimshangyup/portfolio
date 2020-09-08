@@ -2,7 +2,7 @@
 shangyup's portfolio as beginner web developer
 
 
-₩<legalcase>
+₩ <legalcase>
   <legalrelationship>
     <plaintiff>
       <fullname><firstname>Harris</firstname>,
